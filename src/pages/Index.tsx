@@ -9,7 +9,7 @@ const products = [
     price: '1,700.00',
     pv: 100,
     category: 'อาหารเสริม',
-    image: 'https://placehold.co/600x400/bbf7d0/059669?text=SANNULA',
+    image: '/lovable-uploads/c783a9df-56b6-4959-bf97-67219b3338d1.png',
     benefits: [
       'ช่วยปรับระดับภูมิคุ้มกันให้สมดุล',
       'ลดการอักเสบในร่างกาย',
@@ -24,7 +24,7 @@ const products = [
     price: '800.00',
     pv: 50,
     category: 'อาหารเสริม',
-    image: 'https://placehold.co/600x400/99f6e4/0d9488?text=DETOX+HARPER',
+    image: '/lovable-uploads/15e1e520-4f69-413b-812d-96029d6389d5.png',
     benefits: [
       'ล้างสารพิษในร่างกาย',
       'ปรับสมดุลระบบขับถ่าย',
@@ -38,7 +38,7 @@ const products = [
     price: '18,000.00',
     pv: 800,
     category: 'การเกษตร',
-    image: 'https://placehold.co/600x400/dbeafe/1e40af?text=ปรับปรุงดิน',
+    image: '/lovable-uploads/9223787b-8024-4827-8ea9-a5e9723603fa.png',
     benefits: [
       'ปรับสภาพดินให้เป็นกลางและร่วนซุย',
       'เติมอินทรียวัตถุและจุลินทรีย์ที่มีประโยชน์',
@@ -52,7 +52,7 @@ const products = [
     price: '1,900.00',
     pv: 100,
     category: 'อาหารเสริม',
-    image: 'https://placehold.co/600x400/e0e7ff/3730a3?text=VITA+HERBAL',
+    image: '/lovable-uploads/4b213de0-183b-4da5-be7a-d0d8c73c5179.png',
     benefits: [
       'บำรุงการทำงานของปอดและระบบทางเดินหายใจ',
       'ช่วยลดปัญหาจากมลภาวะและอาการไอเรื้อรัง',
@@ -66,7 +66,7 @@ const products = [
     price: '1,500.00',
     pv: 60,
     category: 'อาหารเสริม',
-    image: 'https://placehold.co/600x400/fecaca/991b1b?text=CAMIN+MAX',
+    image: '/lovable-uploads/f5a0d0e4-6022-40e7-bb6e-3bec24f6b836.png',
     benefits: [
       'ลดอาการกรดเกิน, จุกเสียด, ท้องอืด, ท้องเฟ้อ',
       'ปรับสมดุลระบบย่อยอาหาร',
@@ -80,7 +80,7 @@ const products = [
     price: '1,500.00',
     pv: 60,
     category: 'ของใช้ในบ้าน',
-    image: 'https://placehold.co/600x400/fde047/a16207?text=BALM+THAN-OID',
+    image: '/lovable-uploads/a6e384a2-eac6-4db6-b01a-223ffaf18393.png',
     benefits: [
       'บรรเทาอาการปวดเมื่อยกล้ามเนื้อและข้อต่อ',
       'ใช้ทาเพื่อผ่อนคลายความเมื่อยล้า',
@@ -94,7 +94,7 @@ const products = [
     price: '900.00',
     pv: 50,
     category: 'ของใช้ในบ้าน',
-    image: 'https://placehold.co/600x400/f3e8ff/5b21b6?text=GINGER+SOAP',
+    image: '/lovable-uploads/0a06087a-6ec2-41e8-9b0a-d88c5c0ae4bd.png',
     benefits: [
       'ช่วยแก้ปัญหาสิวที่หลังและผิวกาย',
       'ขจัดเซลล์ผิวเก่าและแบคทีเรียสะสม',
@@ -108,7 +108,7 @@ const products = [
     price: '1,500.00',
     pv: 70,
     category: 'ของใช้ในบ้าน',
-    image: 'https://placehold.co/600x400/ffe4e6/f43f5e?text=HONEY+SOAP',
+    image: '/lovable-uploads/431d0b97-7d79-47ab-82b1-7bd64370091c.png',
     benefits: [
       'ช่วยลดฝ้า กระ จุดด่างดำและริ้วรอย',
       'กระตุ้นคอลลาเจนและอิลาสติน',
@@ -122,7 +122,7 @@ const products = [
     price: '1,900.00',
     pv: 100,
     category: 'อาหารเสริม',
-    image: 'https://placehold.co/600x400/dbeafe/1e40af?text=CALCILATE',
+    image: '/lovable-uploads/1f0f9bdf-7f6f-443b-a2bb-e5f75d496ef9.png',
     benefits: [
       'ลดอาการปวดข้อเข่าและข้ออักเสบ',
       'กระตุ้นการสร้างกระดูกใหม่',
@@ -136,7 +136,7 @@ const products = [
     price: '650.00',
     pv: 70,
     category: 'ของใช้ในบ้าน',
-    image: 'https://placehold.co/600x400/d9f991/14532d?text=TOOTHPASTE',
+    image: '/lovable-uploads/904eb519-62be-4d43-ba89-37b0219ff489.png',
     benefits: [
       'ช่วยบำรุงสุขภาพช่องปากและเหงือก',
       'ลดปัญหาหินปูนและฟันผุ',
