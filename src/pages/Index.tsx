@@ -1,12 +1,211 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Hero } from "@/components/Hero";
+import { ProductGrid } from "@/components/ProductGrid";
+
+const products = [
+  {
+    id: 'sannula',
+    name: 'แซนนูล่า โปรตีนจากพืช',
+    description: 'ผลิตภัณฑ์เสริมอาหารโปรตีนจากพืช กลิ่นวานิลลา',
+    price: '1,700.00',
+    pv: 100,
+    category: 'อาหารเสริม',
+    image: 'https://placehold.co/600x400/bbf7d0/059669?text=SANNULA',
+    benefits: [
+      'ช่วยปรับระดับภูมิคุ้มกันให้สมดุล',
+      'ลดการอักเสบในร่างกาย',
+      'ช่วยในเรื่องระบบขับถ่ายและลดความอ้วน',
+      'อาจช่วยป้องกันมะเร็งลำไส้ได้'
+    ]
+  },
+  {
+    id: 'detox-harper',
+    name: 'ดีท็อกซ์ ฮาร์เปอร์ เซเว่น',
+    description: 'ผลิตภัณฑ์ดีท็อกซ์จากสมุนไพรธรรมชาติ',
+    price: '800.00',
+    pv: 50,
+    category: 'อาหารเสริม',
+    image: 'https://placehold.co/600x400/99f6e4/0d9488?text=DETOX+HARPER',
+    benefits: [
+      'ล้างสารพิษในร่างกาย',
+      'ปรับสมดุลระบบขับถ่าย',
+      'ช่วยลดอาการท้องผูก'
+    ]
+  },
+  {
+    id: 'soil-conditioner',
+    name: 'สารปรับปรุงดิน อินทรีย์',
+    description: '"เวิลด์คลาส" ช่วยฟื้นฟูสภาพดินที่เสื่อมโทรมและเป็นกรด',
+    price: '18,000.00',
+    pv: 800,
+    category: 'การเกษตร',
+    image: 'https://placehold.co/600x400/dbeafe/1e40af?text=ปรับปรุงดิน',
+    benefits: [
+      'ปรับสภาพดินให้เป็นกลางและร่วนซุย',
+      'เติมอินทรียวัตถุและจุลินทรีย์ที่มีประโยชน์',
+      'ยับยั้งโรคในดินและฟื้นฟูต้นพืชหลังการเก็บเกี่ยว'
+    ]
+  },
+  {
+    id: 'vita-herbal',
+    name: 'วีต้า เฮอร์เบิล ริช',
+    description: 'ผลิตภัณฑ์เสริมอาหารสมุนไพรบำรุงปอดและระบบทางเดินหายใจ',
+    price: '1,900.00',
+    pv: 100,
+    category: 'อาหารเสริม',
+    image: 'https://placehold.co/600x400/e0e7ff/3730a3?text=VITA+HERBAL',
+    benefits: [
+      'บำรุงการทำงานของปอดและระบบทางเดินหายใจ',
+      'ช่วยลดปัญหาจากมลภาวะและอาการไอเรื้อรัง',
+      'เสริมสร้างภูมิคุ้มกันให้ร่างกาย'
+    ]
+  },
+  {
+    id: 'camin-max',
+    name: 'คามินแม็กซ์',
+    description: 'ผลิตภัณฑ์เสริมอาหารสมุนไพรสำหรับสุขภาพลำไส้และภูมิคุ้มกัน',
+    price: '1,500.00',
+    pv: 60,
+    category: 'อาหารเสริม',
+    image: 'https://placehold.co/600x400/fecaca/991b1b?text=CAMIN+MAX',
+    benefits: [
+      'ลดอาการกรดเกิน, จุกเสียด, ท้องอืด, ท้องเฟ้อ',
+      'ปรับสมดุลระบบย่อยอาหาร',
+      'ช่วยเพิ่มภูมิต้านทานและลดความเครียด'
+    ]
+  },
+  {
+    id: 'balm-than-oid',
+    name: 'บาล์มทานอยด์',
+    description: 'บาล์มบรรเทาอาการปวดเมื่อยตามร่างกาย',
+    price: '1,500.00',
+    pv: 60,
+    category: 'ของใช้ในบ้าน',
+    image: 'https://placehold.co/600x400/fde047/a16207?text=BALM+THAN-OID',
+    benefits: [
+      'บรรเทาอาการปวดเมื่อยกล้ามเนื้อและข้อต่อ',
+      'ใช้ทาเพื่อผ่อนคลายความเมื่อยล้า',
+      'ให้ความรู้สึกเย็นสบาย'
+    ]
+  },
+  {
+    id: 'ginger-ginseng-soap',
+    name: 'สบู่ขิงโสมเกาหลี',
+    description: 'สบู่สำหรับอาบน้ำที่มีส่วนผสมของขิงและโสมเกาหลี',
+    price: '900.00',
+    pv: 50,
+    category: 'ของใช้ในบ้าน',
+    image: 'https://placehold.co/600x400/f3e8ff/5b21b6?text=GINGER+SOAP',
+    benefits: [
+      'ช่วยแก้ปัญหาสิวที่หลังและผิวกาย',
+      'ขจัดเซลล์ผิวเก่าและแบคทีเรียสะสม',
+      'กระตุ้นคอลลาเจนและระงับกลิ่นกาย'
+    ]
+  },
+  {
+    id: 'honey-soap',
+    name: 'สบู่น้ำผึ้งทองคำชาเขียว',
+    description: 'สบู่สำหรับผิวหน้าที่มีส่วนผสมจากน้ำผึ้งและทองคำ',
+    price: '1,500.00',
+    pv: 70,
+    category: 'ของใช้ในบ้าน',
+    image: 'https://placehold.co/600x400/ffe4e6/f43f5e?text=HONEY+SOAP',
+    benefits: [
+      'ช่วยลดฝ้า กระ จุดด่างดำและริ้วรอย',
+      'กระตุ้นคอลลาเจนและอิลาสติน',
+      'ปกป้องผิวจากแสงแดด ทำให้ผิวเนียนนุ่มชุ่มชื้น'
+    ]
+  },
+  {
+    id: 'calcilate',
+    name: 'แคลซีเลทท์',
+    description: 'ผลิตภัณฑ์เสริมอาหารบำรุงข้อและกระดูก',
+    price: '1,900.00',
+    pv: 100,
+    category: 'อาหารเสริม',
+    image: 'https://placehold.co/600x400/dbeafe/1e40af?text=CALCILATE',
+    benefits: [
+      'ลดอาการปวดข้อเข่าและข้ออักเสบ',
+      'กระตุ้นการสร้างกระดูกใหม่',
+      'ฟื้นฟูอาการโรคเก๊าท์และลดความเสื่อมของกระดูก'
+    ]
+  },
+  {
+    id: 'toothpaste',
+    name: 'ยาสีฟันช็อกโกไบโอมิน',
+    description: 'ยาสีฟันมิเนอรัล เฮิร์บ',
+    price: '650.00',
+    pv: 70,
+    category: 'ของใช้ในบ้าน',
+    image: 'https://placehold.co/600x400/d9f991/14532d?text=TOOTHPASTE',
+    benefits: [
+      'ช่วยบำรุงสุขภาพช่องปากและเหงือก',
+      'ลดปัญหาหินปูนและฟันผุ',
+      'ทำให้ลมหายใจสดชื่นและฟันแข็งแรง'
+    ]
+  },
+  {
+    id: 'classic-coffee',
+    name: 'กาแฟคลาสสิค',
+    description: 'กาแฟเพื่อสุขภาพ ไม่มีน้ำตาล',
+    price: '290.00',
+    pv: 15,
+    category: 'อาหารเสริม',
+    image: 'https://placehold.co/600x400/9ca3af/1f2937?text=CLASSIC+COFFEE',
+    benefits: [
+      'ช่วยควบคุมน้ำหนักและเผาผลาญไขมัน',
+      'มีใยอาหารช่วยระบบขับถ่าย',
+      'บำรุงผิวพรรณด้วยคอลลาเจน'
+    ]
+  },
+  {
+    id: 'exfa-herb',
+    name: 'เอ็กซ์ฟา เฮิร์บ',
+    description: 'ผลิตภัณฑ์เสริมอาหารจากธรรมชาติ 100%',
+    price: '1,500.00',
+    pv: 150,
+    category: 'อาหารเสริม',
+    image: 'https://placehold.co/600x400/a78bfa/4c1d95?text=EXFA+HERB',
+    benefits: [
+      'เสริมสร้างภูมิคุ้มกันและต้านอนุมูลอิสระ',
+      'ช่วยลดอาการเหนื่อยง่าย อ่อนเพลีย',
+      'ต้านเชื้อไวรัส แบคทีเรีย และเชื้อรา'
+    ]
+  },
+  {
+    id: 'chitosan',
+    name: 'ไคโตซานสำหรับพืช',
+    description: 'ผลิตภัณฑ์ชนิดผงสำหรับพืช',
+    price: '750.00',
+    pv: 50,
+    category: 'การเกษตร',
+    image: 'https://placehold.co/600x400/a3e635/15803d?text=ไคโตซาน',
+    benefits: [
+      'เสริมภูมิคุ้มกันพืชและป้องกันโรค',
+      'ส่งเสริมการเจริญเติบโตของพืชและปรับปรุงโครงสร้างดิน',
+      'ช่วยในการงอกของเมล็ดและราก'
+    ]
+  },
+  {
+    id: 'plant-amino-acid',
+    name: 'กรดอะมิโนสำหรับพืช',
+    description: 'สูตรไอออน ช่วยให้พืชโตเร็ว ใบเขียว และรากเดินดี',
+    price: '1,500.00',
+    pv: 100,
+    category: 'การเกษตร',
+    image: 'https://placehold.co/600x400/bae6fd/075985?text=กรดอะมิโน',
+    benefits: [
+      'ช่วยให้พืชโตเร็ว ใบเขียว และรากเดินดี',
+      'ฟื้นฟูต้นพืชที่โทรมและกระตุ้นการออกดอก',
+      'เพิ่มความต้านทานโรคและช่วยให้พืชดูดซึมสารอาหารได้ดี'
+    ]
+  }
+];
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Hero />
+      <ProductGrid products={products} />
     </div>
   );
 };
