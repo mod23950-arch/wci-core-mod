@@ -150,7 +150,7 @@ const products = [
     price: '290.00',
     pv: 15,
     category: 'อาหารเสริม',
-    image: 'https://placehold.co/600x400/9ca3af/1f2937?text=CLASSIC+COFFEE',
+    image: '/lovable-uploads/df2e97ca-4f16-417e-89d4-1e315e38280c.png',
     benefits: [
       'ช่วยควบคุมน้ำหนักและเผาผลาญไขมัน',
       'มีใยอาหารช่วยระบบขับถ่าย',
@@ -164,7 +164,7 @@ const products = [
     price: '1,500.00',
     pv: 150,
     category: 'อาหารเสริม',
-    image: 'https://placehold.co/600x400/a78bfa/4c1d95?text=EXFA+HERB',
+    image: '/lovable-uploads/246fcd35-1d72-40e1-be65-332cf83c0da0.png',
     benefits: [
       'เสริมสร้างภูมิคุ้มกันและต้านอนุมูลอิสระ',
       'ช่วยลดอาการเหนื่อยง่าย อ่อนเพลีย',
@@ -178,7 +178,7 @@ const products = [
     price: '750.00',
     pv: 50,
     category: 'การเกษตร',
-    image: 'https://placehold.co/600x400/a3e635/15803d?text=ไคโตซาน',
+    image: '/lovable-uploads/185c4816-ed26-4b13-b93c-ea123d2dfb6f.png',
     benefits: [
       'เสริมภูมิคุ้มกันพืชและป้องกันโรค',
       'ส่งเสริมการเจริญเติบโตของพืชและปรับปรุงโครงสร้างดิน',
@@ -192,7 +192,7 @@ const products = [
     price: '1,500.00',
     pv: 100,
     category: 'การเกษตร',
-    image: 'https://placehold.co/600x400/bae6fd/075985?text=กรดอะมิโน',
+    image: '/lovable-uploads/8526c5ac-af01-4350-99c7-edd3246d0dd0.png',
     benefits: [
       'ช่วยให้พืชโตเร็ว ใบเขียว และรากเดินดี',
       'ฟื้นฟูต้นพืชที่โทรมและกระตุ้นการออกดอก',

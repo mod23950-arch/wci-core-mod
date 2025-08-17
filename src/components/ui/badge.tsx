@@ -9,15 +9,15 @@ const badgeVariants = cva(
     variants: {
       variant: {
         default:
-          "border-transparent bg-primary text-primary-foreground hover:bg-primary/80",
+          "border-transparent bg-gradient-primary text-primary-foreground hover:shadow-glow",
         secondary:
-          "border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80",
+          "border-transparent bg-gradient-secondary text-secondary-foreground hover:shadow-glow",
         destructive:
           "border-transparent bg-destructive text-destructive-foreground hover:bg-destructive/80",
-        outline: "text-foreground",
-        health: "border-transparent bg-health text-health-foreground",
-        agriculture: "border-transparent bg-agriculture text-agriculture-foreground",
-        household: "border-transparent bg-household text-household-foreground",
+        outline: "text-foreground border-border",
+        health: "border-transparent bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-soft",
+        agriculture: "border-transparent bg-gradient-to-r from-green-500 to-emerald-500 text-white shadow-soft",
+        household: "border-transparent bg-gradient-to-r from-blue-500 to-cyan-500 text-white shadow-soft",
       },
     },
     defaultVariants: {
