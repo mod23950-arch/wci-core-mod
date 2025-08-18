@@ -30,10 +30,8 @@ export const Hero = () => {
 
           {/* Main Content */}
           <div className="animate-fade-in animation-delay-200">
-            <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
-              ผลิตภัณฑ์เพื่อ
-              <br />
-              <span className="bg-gradient-primary bg-clip-text text-transparent">สุขภาพที่ดี</span>
+            <h2 className="text-5xl md:text-6xl font-bold text-black mb-6 leading-tight">
+              ผลิตภัณฑ์คุณภาพของ WCI
             </h2>
             
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
