@@ -15,9 +15,9 @@ const badgeVariants = cva(
         destructive:
           "border-transparent bg-destructive text-destructive-foreground hover:bg-destructive/80",
         outline: "text-foreground border-border",
-        health: "border-transparent bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-soft",
-        agriculture: "border-transparent bg-gradient-to-r from-green-500 to-emerald-500 text-white shadow-soft",
-        household: "border-transparent bg-gradient-to-r from-blue-500 to-cyan-500 text-white shadow-soft",
+        health: "border-transparent bg-gradient-to-r from-purple-400 to-pink-400 text-white shadow-soft",
+        agriculture: "border-transparent bg-gradient-to-r from-green-400 to-emerald-400 text-white shadow-soft",
+        household: "border-transparent bg-gradient-to-r from-blue-400 to-cyan-400 text-white shadow-soft",
       },
     },
     defaultVariants: {
