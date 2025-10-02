@@ -23,8 +23,13 @@ const products = [
     price: '175',
     pv: 25,
     category: 'อาหารเสริม',
-    image: '',
-    benefits: []
+    image: '/lovable-uploads/cha-lamoon.jpg',
+    benefits: [
+      'สมุนไพรอายุวัฒนะ ช่วยลดคอเลสเตอรอล ควบคุมระดับน้ำตาลในเลือด',
+      'ช่วยบำรุงหัวใจ ลดไขมันในเลือด และกระตุ้นการไหลเวียนโลหิต',
+      'เสริมภูมิคุ้มกัน ลดความเครียด ต้านอนุมูลอิสระ',
+      'เพิ่มความหวานแบบธรรมชาติ ไม่เพิ่มน้ำตาล ดีต่อผู้ควบคุมน้ำหนักและเบาหวาน'
+    ]
   },
   {
     id: '3',
@@ -42,13 +47,18 @@ const products = [
   },
   {
     id: '4',
-    name: 'World Plant',
-    description: 'เวิล์ดแพลนท์',
+    name: 'กรดอะมิโนสำหรับพืช สูตรไอออน ตราเวิลด์แพลนท์',
+    description: 'World Plant',
     price: '700',
     pv: 100,
     category: 'การเกษตร',
-    image: '',
-    benefits: []
+    image: '/lovable-uploads/world-plant.png',
+    benefits: [
+      'ช่วยฟื้นฟูต้นโทรม',
+      'กระตุ้นการแตกยอดและการออกดอก',
+      'เพิ่มภูมิต้านทานให้พืช',
+      'ใช้ได้กับพืชทุกชนิด เช่น ทุเรียน มะม่วง ลำไย ข้าวโพด อ้อย นาข้าว มันสำปะหลัง'
+    ]
   },
   {
     id: '5',
@@ -85,8 +95,14 @@ const products = [
     price: '1,290',
     pv: 150,
     category: 'อาหารเสริม',
-    image: '',
-    benefits: []
+    image: '/lovable-uploads/naiyana.png',
+    benefits: [
+      'ตาแห้ง เคืองตา เมื่ออยู่หน้าจอนาน',
+      'สายตาพร่ามัว มองไม่ชัดตอนกลางคืน',
+      'ตาล้า ปวดตา เมื่อขับรถหรืออ่านหนังสือนาน',
+      'เห็นภาพซ้อน แสบตา น้ำตาไหลบ่อย',
+      'เริ่มมีจุดดำลอยไปมา (floaters)'
+    ]
   },
   {
     id: '8',
@@ -104,13 +120,19 @@ const products = [
   },
   {
     id: '9',
-    name: 'World 3+',
-    description: 'ผงซักฟอก เวิล์ด3พลัส',
+    name: 'ผงซักฟอก เวิลด์ทรีพลัส',
+    description: 'World 3+',
     price: '250',
     pv: 25,
     category: 'ของใช้ในบ้าน',
-    image: '',
-    benefits: []
+    image: '/lovable-uploads/world-3-plus.jpg',
+    benefits: [
+      'ขจัดคราบฝังลึก: ไม่ว่าจะเป็นคราบเหงื่อ คราบมัน หรือคราบฝังแน่นจากสิ่งสกปรกในชีวิตประจำวัน',
+      'ยับยั้งแบคทีเรีย: ช่วยลดกลิ่นไม่พึงประสงค์จากเสื้อผ้า',
+      'หอมสดชื่นยาวนาน: ไม่ใช่แค่สะอาด แต่ยังมาพร้อมกลิ่นหอมที่สดชื่น',
+      'ไม่มีแป้ง ไม่ทิ้งคราบ: ละลายง่าย ซักผ้าได้สะอาดหมดจด',
+      'รักษ์สิ่งแวดล้อม: ฟองน้อย ย่อยสลายได้ ไม่ปนเปื้อนน้ำเสีย'
+    ]
   },
   {
     id: '10',
@@ -231,8 +253,14 @@ const products = [
     price: '500',
     pv: 100,
     category: 'อาหารเสริม',
-    image: '',
-    benefits: []
+    image: '/lovable-uploads/balancier.jpg',
+    benefits: [
+      'ช่วยระบบเลือดไม่ดี หน้ามืด มือเท้าเย็น',
+      'ฮอร์โมนไม่สมดุล อารมณ์แปรปรวน หงุดหงิดง่าย',
+      'เสื่อมสมรรถภาพทางเพศ',
+      'นอนไม่สนิท หลับไม่ลึก',
+      'ปวดเมื่อยตามตัว โดยเฉพาะตอนตื่นนอน'
+    ]
   },
   {
     id: '19',
@@ -276,7 +304,7 @@ const products = [
     price: '500',
     pv: 70,
     category: 'อาหารเสริม',
-    image: '',
+    image: '/lovable-uploads/tri-tab.jpg',
     benefits: []
   },
   {
@@ -286,7 +314,7 @@ const products = [
     price: '900',
     pv: 90,
     category: 'อาหารเสริม',
-    image: '',
+    image: '/lovable-uploads/gen-bek.jpg',
     benefits: []
   },
   {
@@ -296,7 +324,7 @@ const products = [
     price: '500',
     pv: 70,
     category: 'อาหารเสริม',
-    image: '',
+    image: '/lovable-uploads/bew-wer.jpg',
     benefits: []
   },
   {
@@ -306,7 +334,7 @@ const products = [
     price: '900',
     pv: 50,
     category: 'อาหารเสริม',
-    image: '',
+    image: '/lovable-uploads/medalaid.jpg',
     benefits: []
   },
   {
@@ -316,7 +344,7 @@ const products = [
     price: '600',
     pv: 50,
     category: 'อาหารเสริม',
-    image: '',
+    image: '/lovable-uploads/bacitus.jpg',
     benefits: []
   },
   {
