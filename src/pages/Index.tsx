@@ -303,7 +303,7 @@ const products = [
     description: 'โคเร-เก๊ก',
     price: '500',
     pv: 70,
-    category: 'อาหารเสริม',
+    category: 'การเกษตร',
     image: '/lovable-uploads/tri-tab.jpg',
     benefits: []
   },
@@ -313,7 +313,7 @@ const products = [
     description: 'เฮม-เบส',
     price: '900',
     pv: 90,
-    category: 'อาหารเสริม',
+    category: 'การเกษตร',
     image: '/lovable-uploads/gen-bek.jpg',
     benefits: []
   },
@@ -323,7 +323,7 @@ const products = [
     description: 'บัชชอร์',
     price: '500',
     pv: 70,
-    category: 'อาหารเสริม',
+    category: 'การเกษตร',
     image: '/lovable-uploads/bew-wer.jpg',
     benefits: []
   },
@@ -333,7 +333,7 @@ const products = [
     description: 'เมลาไลท์',
     price: '900',
     pv: 50,
-    category: 'อาหารเสริม',
+    category: 'การเกษตร',
     image: '/lovable-uploads/medalaid.jpg',
     benefits: []
   },
@@ -343,7 +343,7 @@ const products = [
     description: 'บาซีทัล',
     price: '600',
     pv: 50,
-    category: 'อาหารเสริม',
+    category: 'การเกษตร',
     image: '/lovable-uploads/bacitus.jpg',
     benefits: []
   },
@@ -353,8 +353,8 @@ const products = [
     description: 'ซี-ฟีโอ',
     price: '1,250',
     pv: 110,
-    category: 'อาหารเสริม',
-    image: '',
+    category: 'การเกษตร',
+    image: '/lovable-uploads/tab-bta.jpg',
     benefits: []
   }
 ];
